@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# radar.py live snapshots (drafts in samples/output/ are committed via the review PR)
+/samples/snapshots/live/
+__pycache__/

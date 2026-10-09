@@ -107,7 +107,8 @@ export type Matrix = {
   positioning: {
     xAxis: { low: string; high: string };
     yAxis: { low: string; high: string };
-    points: { id: string; name: string; x: number; y: number; note: string }[];
+    // label: which side of the dot the name sits on. Defaults to right, or left near the right edge.
+    points: { id: string; name: string; x: number; y: number; note: string; label?: "top" | "left" | "right" }[];
   };
 };
 

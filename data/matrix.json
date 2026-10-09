@@ -497,7 +497,8 @@
         "name": "Hightouch",
         "x": 86,
         "y": 72,
-        "note": "Composable, with self-serve tools aimed at marketers"
+        "note": "Composable, with self-serve tools aimed at marketers",
+        "label": "top"
       },
       {
         "id": "segment",

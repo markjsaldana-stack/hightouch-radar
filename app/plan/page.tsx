@@ -25,6 +25,7 @@ const phases = [
     items: [
       "Launch the weekly digest and a sales alert channel.",
       "Start a monthly win-loss interview cadence.",
+      "Start monthly mystery-shop calls, rotating through the primary competitors.",
       "Build the comparison matrix and the first comparison pages.",
     ],
     done: "The Radar runs every week without me having to chase it.",

@@ -7,7 +7,7 @@ const pillars = [
   {
     icon: Binoculars,
     title: "Track",
-    body: "Features, pricing, positioning, reviews, hiring, and partnerships for every competitor that shows up in deals.",
+    body: "Features, pricing, positioning, reviews, hiring, and partnerships for every competitor in our deals, plus how their reps pitch on real sales calls.",
   },
   {
     icon: Gauge,

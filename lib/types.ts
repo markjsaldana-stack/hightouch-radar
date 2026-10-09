@@ -26,7 +26,8 @@ export type SourceType =
   | "partner directory"
   | "webinar/events"
   | "win-loss notes"
-  | "call mentions";
+  | "call mentions"
+  | "mystery-shop calls";
 
 export type Source = {
   id: string;

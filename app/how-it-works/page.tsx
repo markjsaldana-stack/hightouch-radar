@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRight,
+  Bot,
+  Hand,
   Camera,
   ChevronRight,
   Diff,
@@ -16,6 +18,31 @@ import { competitorName, signalById, signalTypeLabel, sources } from "@/lib/data
 
 export const metadata: Metadata = { title: "How it works" };
 
+const automated = [
+  "Checking every public source on schedule",
+  "Saving snapshots and flagging what changed",
+  "Drafting the type, scores, and talk track for each change",
+];
+
+const handsOn = [
+  {
+    title: "Mystery-shop calls",
+    body: "I book sales calls with competitors as a prospect to hear how their reps pitch, which objections they plant about us, and how they handle pricing questions. No changelog shows that.",
+  },
+  {
+    title: "Win-loss interviews",
+    body: "Monthly conversations with buyers who chose us and buyers who didn't.",
+  },
+  {
+    title: "Listening to our own calls",
+    body: "Reviewing competitor mentions in recorded sales calls and sitting in on competitive deals.",
+  },
+  {
+    title: "Reviewing every AI draft",
+    body: "I own the point of view and anything a rep will say to a customer. Anything rated Rumor stays out of talk tracks.",
+  },
+];
+
 // The worked example traced through every step below.
 const EXAMPLE_SIGNAL = 15;
 
@@ -28,7 +55,7 @@ export default function Page() {
     {
       icon: Globe,
       title: "Sources",
-      body: "Changelogs, release notes, pricing pages, product docs, blogs, webinars, job posts, partner pages, public review themes, win-loss notes, and sales-call mentions.",
+      body: "Changelogs, release notes, pricing pages, product docs, blogs, webinars, job posts, partner pages, public review themes, win-loss notes, sales-call mentions, and mystery-shop calls with competitors.",
       trace: `${competitor} ${source.type}, checked ${source.frequency.toLowerCase()}.`,
     },
     {
@@ -125,17 +152,48 @@ export default function Page() {
         ))}
       </ol>
 
-      <aside className="mt-8 flex gap-4 rounded-xl border border-accent/30 bg-accent-soft p-6">
-        <UserCheck className="mt-0.5 size-6 shrink-0 text-accent" aria-hidden />
-        <div>
-          <h2 className="font-semibold">Human in the loop</h2>
-          <p className="mt-1 max-w-2xl text-pretty">
-            AI handles collection and first drafts. I own the judgment, the point of view, and anything a rep will
-            say to a customer. I check every talk track against its source, and anything rated Rumor stays out of
-            talk tracks entirely.
-          </p>
+      <section className="mt-8 rounded-xl border border-accent/30 bg-accent-soft p-6">
+        <h2 className="flex items-center gap-2 font-semibold">
+          <UserCheck className="size-5 text-accent" aria-hidden />
+          Automation plus hands-on work
+        </h2>
+        <p className="mt-1 max-w-3xl text-pretty">
+          Automation covers the public record. The intel reps trust most comes from talking to people, so a big part of
+          the job happens away from the automation.
+        </p>
+        <div className="mt-5 grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+          <div className="rounded-lg bg-surface p-4">
+            <h3 className="flex items-center gap-2 text-sm font-semibold">
+              <Bot className="size-4 text-muted" aria-hidden />
+              Automated
+            </h3>
+            <ul className="mt-3 space-y-2 text-sm text-muted">
+              {automated.map((item) => (
+                <li key={item} className="text-pretty">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-lg bg-surface p-4">
+            <h3 className="flex items-center gap-2 text-sm font-semibold">
+              <Hand className="size-4 text-accent" aria-hidden />
+              Hands-on, by me
+            </h3>
+            <ul className="mt-3 space-y-3 text-sm">
+              {handsOn.map((item) => (
+                <li key={item.title} className="text-pretty">
+                  <span className="font-medium">{item.title}.</span> <span className="text-muted">{item.body}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 border-t border-line pt-3 text-xs text-pretty text-muted">
+              Mystery-shop calls run within legal&apos;s guidelines. I never ask for confidential information, and
+              notes are shared as themes, not recordings.
+            </p>
+          </div>
         </div>
-      </aside>
+      </section>
 
       <div className="mt-10">
         <Link

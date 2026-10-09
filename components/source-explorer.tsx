@@ -14,6 +14,16 @@ const filters: { id: Filter; label: string }[] = [
   { id: "internal", label: "Category & internal" },
 ];
 
+// Snapshots are stored as markdown. Show headings and bullets the way a reader
+// would see them on the page, without the # and - markers.
+function isHeading(text: string) {
+  return /^#+\s/.test(text);
+}
+
+function readable(text: string) {
+  return text.replace(/^#+\s+/, "").replace(/^-\s+/, "• ");
+}
+
 function matches(filter: Filter, competitorId: string) {
   if (filter === "all") return true;
   if (filter === "internal") return competitorId === "category";
@@ -49,7 +59,7 @@ export function SourceExplorer({
     <div>
       <div className="flex flex-wrap items-center gap-2 rounded-xl border border-accent/30 bg-accent-soft px-4 py-3 text-sm">
         <FileDiff className="size-4 text-accent" aria-hidden />
-        <span className="font-medium">Try a source with a snapshot:</span>
+        <span className="font-medium">See a before-and-after:</span>
         {demoSources.map((s) => (
           <button
             key={s.id}
@@ -111,7 +121,7 @@ export function SourceExplorer({
                     <span className="flex shrink-0 flex-col items-end gap-1">
                       {s.snapshot ? (
                         <span className="rounded bg-accent px-1.5 py-0.5 text-[11px] font-medium text-accent-fg">
-                          Diff
+                          Before/after
                         </span>
                       ) : null}
                       {count ? (
@@ -135,7 +145,12 @@ export function SourceExplorer({
             </h3>
             <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-[auto_1fr] sm:gap-x-6 sm:gap-y-2">
               <dt className="text-muted">Where</dt>
-              <dd className="font-mono text-xs break-all sm:text-sm">{selected.url}</dd>
+              <dd className="text-pretty">
+                {/* Placeholder URLs (<...>) read as code, so describe the page instead. */}
+                {selected.url.startsWith("<")
+                  ? `${competitorName(selected.competitorId)}'s public ${selected.type}`
+                  : selected.url}
+              </dd>
               <dt className="text-muted">Checked</dt>
               <dd>
                 {selected.frequency}
@@ -149,13 +164,19 @@ export function SourceExplorer({
           {diff ? (
             <div className="overflow-hidden rounded-xl border border-line bg-surface">
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line px-5 py-3">
-                <p className="text-sm font-medium">Change detection: last snapshot vs. this one</p>
+                <div>
+                  <p className="text-sm font-medium">What changed since the last check</p>
+                  <p className="mt-0.5 text-xs text-muted">
+                    <span className="text-good">Green</span> = added · <span className="text-bad">red</span> =
+                    removed · <span className="line-through">struck through</span> = cosmetic, ignored
+                  </p>
+                </div>
                 <p className="text-xs text-muted">
                   <span className="font-medium text-fg">{diff.meaningful}</span> meaningful line
                   {diff.meaningful === 1 ? "" : "s"} · {diff.cosmetic} cosmetic ignored
                 </p>
               </div>
-              <pre className="overflow-x-auto py-2 font-mono text-[12.5px] leading-6">
+              <pre className="overflow-x-auto py-2 font-sans text-[13px] leading-6">
                 {diff.lines.map((line, i) => {
                   const tone =
                     line.kind === "same"
@@ -171,8 +192,12 @@ export function SourceExplorer({
                       <span className="w-5 shrink-0 select-none" aria-hidden>
                         {mark}
                       </span>
-                      <span className={`whitespace-pre-wrap ${line.cosmetic ? "line-through decoration-muted/50" : ""}`}>
-                        {line.text || " "}
+                      <span
+                        className={`whitespace-pre-wrap ${line.cosmetic ? "line-through decoration-muted/50" : ""} ${
+                          isHeading(line.text) ? "font-semibold" : ""
+                        }`}
+                      >
+                        {readable(line.text) || " "}
                       </span>
                       {line.cosmetic && line.kind === "add" ? (
                         <span className="ml-auto pl-4 font-sans text-[11px] whitespace-nowrap">
@@ -192,7 +217,7 @@ export function SourceExplorer({
                 <ArrowDown className="size-4" aria-hidden />
                 {diff
                   ? "Classified and scored into:"
-                  : "No snapshot in this demo, but this source produced:"}
+                  : "No saved before-and-after for this one, but it produced:"}
               </div>
               {produced.map((s) => (
                 <SignalCard key={s.id} signal={s} />

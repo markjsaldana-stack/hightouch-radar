@@ -5,7 +5,7 @@
     { "date": "2026-10-03", "signal": 13, "kind": "PMM", "destination": "Enablement", "action": "'Keep Segment, add Hightouch' play added to mid-market discovery guide", "outcome": "Covered in Friday sales huddle." },
     { "date": "2026-10-02", "signal": 11, "kind": "Website", "destination": "Web team", "action": "Comparison page updated with a 'what composable means' section", "outcome": "New page live. Conversion tracked against the prior 4-week baseline." },
     { "date": "2026-10-02", "signal": 12, "kind": "CS", "destination": "CS leadership", "action": "Time-to-value proof points shared for renewal conversations", "outcome": "Added to the QBR deck template." },
-    { "date": "2026-09-30", "signal": 9, "kind": "Product", "destination": "Product roadmap review", "action": "On-device audience evaluation reviewed with the owning PM", "outcome": "Gap logged. Interim talk track scopes latency needs first." },
+    { "date": "2026-09-30", "signal": 9, "kind": "Product", "destination": "Product roadmap review", "action": "On-device audience evaluation reviewed with the owning PM", "outcome": "Gap logged. Interim talk track starts by asking how fast audiences need to update." },
     { "date": "2026-09-26", "signal": 7, "kind": "Win-loss", "destination": "Win-loss program", "action": "Bundling question added to this month's win-loss interview guide", "outcome": "2 interviews scheduled with recent closed-lost accounts." },
     { "date": "2026-09-23", "signal": 6, "kind": "PMM", "destination": "Monthly competitive review", "action": "Positioning shift logged for the monthly review", "outcome": "No change to talk tracks. Watching for it in data-team evaluations." }
   ],

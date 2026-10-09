@@ -167,7 +167,7 @@
             },
             "adobe": {
               "mark": "partial",
-              "note": "Federated composition; most features need ingestion (Signal #18)"
+              "note": "Some audiences can query the warehouse; most features need data copied in first (Signal #18)"
             },
             "rudderstack": {
               "mark": "yes",
@@ -233,7 +233,7 @@
             },
             "mparticle": {
               "mark": "yes",
-              "note": "IDSync"
+              "note": "Built-in identity matching"
             }
           }
         },
@@ -271,7 +271,7 @@
           "cells": {
             "hightouch": {
               "mark": "yes",
-              "note": "Git sync for models and syncs"
+              "note": "Data team can review changes before they go live"
             },
             "segment": {
               "mark": "partial",
@@ -287,7 +287,7 @@
             },
             "rudderstack": {
               "mark": "yes",
-              "note": "Infrastructure-as-code"
+              "note": "Data team can review changes before they go live"
             },
             "mparticle": {
               "mark": "partial",
@@ -305,7 +305,7 @@
           "cells": {
             "hightouch": {
               "mark": "partial",
-              "note": "Streaming options; scope latency needs first"
+              "note": "Real-time options; confirm how fast the use case needs it"
             },
             "segment": {
               "mark": "yes",
@@ -317,7 +317,7 @@
             },
             "adobe": {
               "mark": "yes",
-              "note": "Edge segmentation"
+              "note": "Real-time segments on site and in app"
             },
             "rudderstack": {
               "mark": "partial",
@@ -463,11 +463,11 @@
             },
             "salesforce": {
               "mark": "partial",
-              "note": "Depends on data ingestion"
+              "note": "Depends on copying data in first"
             },
             "adobe": {
               "mark": "partial",
-              "note": "Depends on data ingestion"
+              "note": "Depends on copying data in first"
             },
             "rudderstack": {
               "mark": "partial",

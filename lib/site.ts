@@ -5,6 +5,4 @@ export const siteDescription =
 
 export const personName = "Mark Saldaña";
 
-export const portfolioUrl = "https://marklaunches.com";
-
 export const sampleDisclaimer = "Sample data for illustration. Not real competitive claims.";

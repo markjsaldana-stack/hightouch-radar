@@ -16,10 +16,10 @@ const tiers: { id: Tier; note: string }[] = [
 ];
 
 const sections = [
-  { id: "competitors", letter: "A", title: "Competitor list", file: "competitors.json" },
-  { id: "sources", letter: "B", title: "Sources", file: "sources.json" },
-  { id: "signal-types", letter: "C", title: "Signal types", file: "signal_types.json" },
-  { id: "rules", letter: "D", title: "Scoring & routing rules", file: "rules.json" },
+  { id: "competitors", letter: "A", title: "Competitor list" },
+  { id: "sources", letter: "B", title: "Sources" },
+  { id: "signal-types", letter: "C", title: "Signal types" },
+  { id: "rules", letter: "D", title: "Scoring & routing rules" },
 ];
 
 function Section({ index, lede, children }: { index: number; lede: string; children: ReactNode }) {
@@ -31,7 +31,6 @@ function Section({ index, lede, children }: { index: number; lede: string; child
           <span className="mr-2 font-mono text-accent">{s.letter}.</span>
           {s.title}
         </h2>
-        <code className="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-xs text-muted">data/{s.file}</code>
       </div>
       <p className="mt-2 max-w-2xl text-sm text-pretty text-muted">{lede}</p>
       <div className="mt-5">{children}</div>
@@ -48,8 +47,8 @@ export default function Page() {
     <>
       <PageHeader
         eyebrow="03 · Inputs"
-        title="The configuration behind the Radar"
-        lede="Four files decide what gets watched and what happens to each change. Swap in real data and the pages stay the same."
+        title="What the Radar watches, and the rules it follows"
+        lede="Who we track, where we look, what counts as a change, and how each change is scored and routed."
         sample
       />
 
@@ -117,7 +116,7 @@ export default function Page() {
 
       <Section
         index={1}
-        lede={`${sources.length} sources, public and internal. Pick one to see what the Radar checks, and for sources with a snapshot, the diff and the signal it produced.`}
+        lede={`${sources.length} sources, public and internal. Pick one to see what the Radar checks. Three have saved before-and-after versions, so you can see exactly what changed and the signal it produced.`}
       >
         <SourceExplorer diffs={diffs} initialSource="salesforce-pricing" />
       </Section>

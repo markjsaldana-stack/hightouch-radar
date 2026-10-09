@@ -9,7 +9,7 @@
   { "id": "salesforce-docs", "competitorId": "salesforce", "type": "docs", "url": "<data-360-docs-url>", "internal": false, "frequency": "Weekly", "lookFor": "Zero-copy and warehouse connector depth, limits, and setup steps" },
   { "id": "salesforce-partners", "competitorId": "salesforce", "type": "partner directory", "url": "<appexchange-url>", "internal": false, "frequency": "Monthly", "lookFor": "New warehouse and activation partners" },
 
-  { "id": "adobe-release-notes", "competitorId": "adobe", "type": "changelog", "url": "<aep-release-notes-url>", "internal": false, "frequency": "Weekly", "lookFor": "Real-Time CDP features, federated audience composition, warehouse connectors" },
+  { "id": "adobe-release-notes", "competitorId": "adobe", "type": "changelog", "url": "<aep-release-notes-url>", "internal": false, "frequency": "Weekly", "lookFor": "Real-Time CDP features, audiences built directly on warehouse data, warehouse connectors" },
   { "id": "adobe-blog", "competitorId": "adobe", "type": "blog", "url": "<adobe-blog-url>", "internal": false, "frequency": "Weekly", "lookFor": "Comparison content aimed at composable CDP buyers" },
   { "id": "adobe-partners", "competitorId": "adobe", "type": "partner directory", "url": "<adobe-exchange-url>", "internal": false, "frequency": "Monthly", "lookFor": "Cloud warehouse partnerships and co-sell announcements" },
   { "id": "adobe-events", "competitorId": "adobe", "type": "webinar/events", "url": "<adobe-summit-url>", "internal": false, "frequency": "Monthly", "lookFor": "Roadmap reveals at Summit and regional events" },

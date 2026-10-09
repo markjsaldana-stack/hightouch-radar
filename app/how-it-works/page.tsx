@@ -40,7 +40,7 @@ export default function Page() {
     {
       icon: Diff,
       title: "Change detection",
-      body: "Diff against the last snapshot. Cosmetic changes like dates, typos, and layout are ignored.",
+      body: "Compare each snapshot with the last one, line by line. Cosmetic changes like dates, typos, and layout are ignored.",
       trace: "1 meaningful change: identity resolution moved from Add-ons into the Starter edition. The date stamp change was ignored.",
     },
     {
@@ -74,7 +74,7 @@ export default function Page() {
 
       {/* Flow strip: the whole pipeline at a glance. */}
       <ol
-        aria-label="Pipeline steps"
+        aria-label="Steps"
         className="flex flex-wrap items-center gap-x-1 gap-y-2 rounded-xl border border-line bg-surface p-3"
       >
         {steps.map(({ icon: Icon, title }, i) => (
@@ -142,7 +142,7 @@ export default function Page() {
           href="/inputs"
           className="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-accent-fg transition-opacity hover:opacity-90"
         >
-          See the inputs and the diff <ArrowRight className="size-4" aria-hidden />
+          See the inputs and what changed <ArrowRight className="size-4" aria-hidden />
         </Link>
       </div>
     </>

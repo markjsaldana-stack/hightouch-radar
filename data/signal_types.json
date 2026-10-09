@@ -1,0 +1,11 @@
+[
+  { "id": "feature", "label": "Feature launch", "description": "A new or expanded capability that overlaps with ours.", "example": "Added a no-code audience builder for marketers." },
+  { "id": "pricing", "label": "Pricing / packaging change", "description": "What's included where, new tiers, bundles, or add-ons. We track the change, not invented numbers.", "example": "Moved identity resolution from an add-on into the base edition." },
+  { "id": "positioning", "label": "Positioning / messaging shift", "description": "New category language, headlines, or comparison content aimed at our buyers.", "example": "Homepage shifted from 'CDP' to 'customer AI' language." },
+  { "id": "partnership", "label": "New integration or partnership", "description": "Connectors, co-sell deals, or marketplace listings that change who they can reach.", "example": "Announced a zero-copy connector with a cloud data warehouse." },
+  { "id": "ai", "label": "AI capability", "description": "Agents, decisioning, or generative features, especially ones aimed at marketers.", "example": "Goal-based agent setup for lifecycle campaigns." },
+  { "id": "review", "label": "Review theme", "description": "A recurring theme in public reviews, summarized across many reviews. Never a single quote.", "example": "Long implementation timelines come up repeatedly for packaged CDPs." },
+  { "id": "hiring", "label": "Hiring signal", "description": "Job posts that hint at where a competitor is investing.", "example": "Hiring 8 AEs for EMEA enterprise." },
+  { "id": "mna", "label": "M&A or funding", "description": "Acquisitions, mergers, or funding that change a competitor's capacity or focus.", "example": "Acquired an AI decisioning company." },
+  { "id": "winloss", "label": "Customer win/loss mention", "description": "A competitor named in a closed deal, call, or renewal conversation.", "example": "Two closed-lost notes cite bundling with an existing contract." }
+]

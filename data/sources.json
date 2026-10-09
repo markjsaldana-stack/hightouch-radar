@@ -1,0 +1,33 @@
+[
+  { "id": "segment-changelog", "competitorId": "segment", "type": "changelog", "url": "<segment-changelog-url>", "internal": false, "frequency": "Weekly", "lookFor": "New audience, activation, or AI features that touch our marketer self-serve story", "snapshot": "segment-changelog" },
+  { "id": "segment-pricing", "competitorId": "segment", "type": "pricing page", "url": "<segment-pricing-url>", "internal": false, "frequency": "Daily", "lookFor": "Plan names, what moved between tiers, new add-ons" },
+  { "id": "segment-blog", "competitorId": "segment", "type": "blog", "url": "<segment-blog-url>", "internal": false, "frequency": "Weekly", "lookFor": "Category language, homepage and headline shifts, warehouse positioning" },
+  { "id": "segment-webinars", "competitorId": "segment", "type": "webinar/events", "url": "<twilio-events-url>", "internal": false, "frequency": "Monthly", "lookFor": "Launch themes and keynote claims ahead of announcements" },
+
+  { "id": "salesforce-pricing", "competitorId": "salesforce", "type": "pricing page", "url": "<data-360-pricing-url>", "internal": false, "frequency": "Daily", "lookFor": "Packaging changes, features moving into base editions, bundling with other clouds", "snapshot": "salesforce-pricing" },
+  { "id": "salesforce-release-notes", "competitorId": "salesforce", "type": "changelog", "url": "<salesforce-release-notes-url>", "internal": false, "frequency": "Weekly", "lookFor": "Data 360 and Agentforce features that overlap with activation or decisioning" },
+  { "id": "salesforce-docs", "competitorId": "salesforce", "type": "docs", "url": "<data-360-docs-url>", "internal": false, "frequency": "Weekly", "lookFor": "Zero-copy and warehouse connector depth, limits, and setup steps" },
+  { "id": "salesforce-partners", "competitorId": "salesforce", "type": "partner directory", "url": "<appexchange-url>", "internal": false, "frequency": "Monthly", "lookFor": "New warehouse and activation partners" },
+
+  { "id": "adobe-release-notes", "competitorId": "adobe", "type": "changelog", "url": "<aep-release-notes-url>", "internal": false, "frequency": "Weekly", "lookFor": "Real-Time CDP features, federated audience composition, warehouse connectors" },
+  { "id": "adobe-blog", "competitorId": "adobe", "type": "blog", "url": "<adobe-blog-url>", "internal": false, "frequency": "Weekly", "lookFor": "Comparison content aimed at composable CDP buyers" },
+  { "id": "adobe-partners", "competitorId": "adobe", "type": "partner directory", "url": "<adobe-exchange-url>", "internal": false, "frequency": "Monthly", "lookFor": "Cloud warehouse partnerships and co-sell announcements" },
+  { "id": "adobe-events", "competitorId": "adobe", "type": "webinar/events", "url": "<adobe-summit-url>", "internal": false, "frequency": "Monthly", "lookFor": "Roadmap reveals at Summit and regional events" },
+
+  { "id": "rudderstack-careers", "competitorId": "rudderstack", "type": "careers", "url": "<rudderstack-careers-url>", "internal": false, "frequency": "Weekly", "lookFor": "Sales hiring by region and segment, new product team roles", "snapshot": "rudderstack-careers" },
+  { "id": "rudderstack-changelog", "competitorId": "rudderstack", "type": "changelog", "url": "<rudderstack-changelog-url>", "internal": false, "frequency": "Weekly", "lookFor": "Reverse ETL and audience features moving toward marketers" },
+  { "id": "rudderstack-blog", "competitorId": "rudderstack", "type": "blog", "url": "<rudderstack-blog-url>", "internal": false, "frequency": "Weekly", "lookFor": "Positioning toward data teams and AI use cases" },
+
+  { "id": "mparticle-changelog", "competitorId": "mparticle", "type": "changelog", "url": "<mparticle-changelog-url>", "internal": false, "frequency": "Weekly", "lookFor": "Real-time and mobile audience features" },
+  { "id": "mparticle-partners", "competitorId": "mparticle", "type": "partner directory", "url": "<mparticle-integrations-url>", "internal": false, "frequency": "Monthly", "lookFor": "Commerce and Rokt network integrations" },
+  { "id": "mparticle-careers", "competitorId": "mparticle", "type": "careers", "url": "<rokt-careers-url>", "internal": false, "frequency": "Monthly", "lookFor": "CDP product and sales hiring after the Rokt acquisition" },
+
+  { "id": "braze-changelog", "competitorId": "braze", "type": "changelog", "url": "<braze-release-notes-url>", "internal": false, "frequency": "Weekly", "lookFor": "AI Decisioning Studio features and agent setup for marketers" },
+  { "id": "braze-events", "competitorId": "braze", "type": "webinar/events", "url": "<braze-forge-url>", "internal": false, "frequency": "Monthly", "lookFor": "Decisioning roadmap and partner positioning at Forge" },
+
+  { "id": "category-review-themes", "competitorId": "category", "type": "review themes", "url": "Public review sites, summarized by hand (no scraping)", "internal": false, "frequency": "Monthly", "lookFor": "Recurring praise and complaint themes across the category" },
+  { "id": "internal-win-loss", "competitorId": "category", "type": "win-loss notes", "url": "Internal: CRM closed-lost reasons + win-loss interviews", "internal": true, "frequency": "Continuous", "lookFor": "Which competitor, which persona, and the stated reason" },
+  { "id": "internal-calls", "competitorId": "category", "type": "call mentions", "url": "Internal: Gong trackers for competitor names and key phrases", "internal": true, "frequency": "Continuous", "lookFor": "Mention volume by competitor and the objections reps hear" },
+  { "id": "internal-se-notes", "competitorId": "category", "type": "win-loss notes", "url": "Internal: SE technical-evaluation notes", "internal": true, "frequency": "Weekly", "lookFor": "Bake-off results and features prospects tested" },
+  { "id": "internal-cs-escalations", "competitorId": "category", "type": "call mentions", "url": "Internal: CS renewal and churn-risk notes", "internal": true, "frequency": "Weekly", "lookFor": "Competitors showing up at renewal" }
+]

@@ -1,0 +1,31 @@
+{
+  "dealImpact": [
+    { "score": 5, "label": "Changes what a rep says in active deals today" },
+    { "score": 4, "label": "Weakens or strengthens a core differentiator" },
+    { "score": 3, "label": "Worth knowing for upcoming evaluations" },
+    { "score": 2, "label": "Context for PMM and Product, not reps" },
+    { "score": 1, "label": "Log it, no action" }
+  ],
+  "personas": [
+    { "id": "Marketing", "needs": "Speed to launch campaigns without filing tickets" },
+    { "id": "Data", "needs": "Governance, no second copy of data, and less pipeline work" },
+    { "id": "Product", "needs": "Real-time behavior data and experimentation" },
+    { "id": "Exec", "needs": "Total cost, time to value, and vendor risk" }
+  ],
+  "urgency": [
+    { "id": "Alert now", "when": "Impact 4–5 and Confirmed or Likely. Goes to the sales alert channel the same day." },
+    { "id": "This week's digest", "when": "Impact 3, or impact 4–5 that is still a Rumor." },
+    { "id": "Monthly review", "when": "Impact 1–2. Rolled into the monthly competitive review." }
+  ],
+  "confidence": [
+    { "id": "Confirmed", "when": "Official source: changelog, pricing page, docs, or press release." },
+    { "id": "Likely", "when": "Strong indirect evidence: job posts, multiple call mentions, partner listings." },
+    { "id": "Rumor", "when": "Single anecdote or unverified report. Never goes into a talk track." }
+  ],
+  "routing": [
+    { "when": "Impact 4–5", "to": ["Sales", "PMM"], "action": "Sales alert + battlecard update" },
+    { "when": "Roadmap gap", "to": ["Product"], "action": "Gap review with the owning PM" },
+    { "when": "Messaging shift", "to": ["PMM", "Website"], "action": "Messaging and comparison page review" },
+    { "when": "Review theme trend", "to": ["PMM", "CS"], "action": "Proof points for PMM, renewal talking points for CS" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "entries": [
+    { "date": "2026-10-06", "signal": 15, "kind": "Sales alert", "destination": "#comp-alerts Slack channel", "action": "Sales alert sent same day with a two-line talk track", "outcome": "Battlecard cost section updated. 2 AEs flagged active Salesforce-shop deals for follow-up." },
+    { "date": "2026-10-05", "signal": 14, "kind": "Sales alert", "destination": "#comp-alerts Slack channel", "action": "Sales alert sent, Segment battlecard objection added", "outcome": "3 reps used the talk track in active deals within the week." },
+    { "date": "2026-10-03", "signal": 13, "kind": "PMM", "destination": "Enablement", "action": "'Keep Segment, add Hightouch' play added to mid-market discovery guide", "outcome": "Covered in Friday sales huddle." },
+    { "date": "2026-10-02", "signal": 11, "kind": "Website", "destination": "Web team", "action": "Comparison page updated with a 'composable isn't DIY' section", "outcome": "New page live. Conversion tracked against the prior 4-week baseline." },
+    { "date": "2026-10-02", "signal": 12, "kind": "CS", "destination": "CS leadership", "action": "Time-to-value proof points shared for renewal conversations", "outcome": "Added to the QBR deck template." },
+    { "date": "2026-09-30", "signal": 9, "kind": "Product", "destination": "Product roadmap review", "action": "On-device audience evaluation reviewed with the owning PM", "outcome": "Gap logged. Interim talk track scopes latency needs first." },
+    { "date": "2026-09-26", "signal": 7, "kind": "Win-loss", "destination": "Win-loss program", "action": "Bundling question added to this month's win-loss interview guide", "outcome": "2 interviews scheduled with recent closed-lost accounts." },
+    { "date": "2026-09-23", "signal": 6, "kind": "PMM", "destination": "Monthly competitive review", "action": "Positioning shift logged for the monthly review", "outcome": "No change to talk tracks. Watching for it in data-team evaluations." }
+  ],
+  "kpis": [
+    { "name": "Battlecard usage", "why": "Shows reps trust and use the content", "measure": "Weekly views and opens from CRM and Slack, per rep", "target": "Majority of active AEs open a card each month" },
+    { "name": "Win rate vs. each primary competitor", "why": "The outcome that matters most", "measure": "Closed-won ÷ closed (won + lost) where the competitor is tagged in CRM", "target": "Baseline in days 61–90, then improve quarter over quarter" },
+    { "name": "Time from competitor change to sales alert", "why": "Proves the Radar is fast enough to matter in live deals", "measure": "Source change detected → alert posted, for impact 4–5 signals", "target": "Under 24 hours" },
+    { "name": "Deals with CI support", "why": "Coverage: how many competitive deals the program actually touches", "measure": "% of competitive opportunities with a battlecard view, alert, or SE consult", "target": "Track monthly; grow coverage each quarter" },
+    { "name": "Comparison page conversion rate", "why": "Turns CI into pipeline from buyers already comparing", "measure": "Demo requests ÷ sessions on comparison pages", "target": "Baseline, then A/B test page changes driven by signals" }
+  ]
+}

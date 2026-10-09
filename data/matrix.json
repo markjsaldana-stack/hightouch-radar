@@ -1,0 +1,546 @@
+{
+  "players": [
+    {
+      "id": "hightouch",
+      "name": "Hightouch"
+    },
+    {
+      "id": "segment",
+      "name": "Segment"
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce Data 360"
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe RT-CDP"
+    },
+    {
+      "id": "rudderstack",
+      "name": "RudderStack"
+    },
+    {
+      "id": "mparticle",
+      "name": "mParticle"
+    }
+  ],
+  "groups": [
+    {
+      "persona": "Marketing",
+      "capabilities": [
+        {
+          "name": "No-code audience builder",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Visual builder on warehouse models"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "New builder on warehouse-linked data (Signal #14)"
+            },
+            "salesforce": {
+              "mark": "yes",
+              "note": "Segmentation inside Data 360"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "Segment builder in AEP"
+            },
+            "rudderstack": {
+              "mark": "partial",
+              "note": "Audiences exist, oriented to data teams"
+            },
+            "mparticle": {
+              "mark": "yes",
+              "note": "Audience builder in platform"
+            }
+          }
+        },
+        {
+          "name": "Journey orchestration",
+          "cells": {
+            "hightouch": {
+              "mark": "partial",
+              "note": "Journeys; most teams orchestrate in their ESP"
+            },
+            "segment": {
+              "mark": "partial",
+              "note": "Journeys product"
+            },
+            "salesforce": {
+              "mark": "yes",
+              "note": "With Marketing Cloud"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "With Journey Optimizer"
+            },
+            "rudderstack": {
+              "mark": "no",
+              "note": "Not a focus"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Basic journey triggers"
+            }
+          }
+        },
+        {
+          "name": "AI decisioning / next best action",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "AI Decisioning product"
+            },
+            "segment": {
+              "mark": "partial",
+              "note": "Predictive traits; decisioning limited"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Agentforce features; scope varies"
+            },
+            "adobe": {
+              "mark": "partial",
+              "note": "AI features across suite"
+            },
+            "rudderstack": {
+              "mark": "no",
+              "note": "Not offered"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Predictive audiences"
+            }
+          }
+        },
+        {
+          "name": "Always-on experimentation",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Built into AI Decisioning"
+            },
+            "segment": {
+              "mark": "no",
+              "note": "Not a native feature"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Via other Salesforce clouds"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "Via Adobe Target"
+            },
+            "rudderstack": {
+              "mark": "no",
+              "note": "Not offered"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Via partners"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "persona": "Data",
+      "capabilities": [
+        {
+          "name": "Runs on the warehouse without copying data",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Core architecture"
+            },
+            "segment": {
+              "mark": "partial",
+              "note": "Warehouse-linked features alongside profile store"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Zero-copy for some sources (Signal #15)"
+            },
+            "adobe": {
+              "mark": "partial",
+              "note": "Federated composition; most features need ingestion (Signal #18)"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Core architecture"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Warehouse sync; profile store is primary"
+            }
+          }
+        },
+        {
+          "name": "Reverse ETL / warehouse sync",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Original product"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "Reverse ETL offered"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Via connectors"
+            },
+            "adobe": {
+              "mark": "partial",
+              "note": "Via connectors"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Reverse ETL offered"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Warehouse sync"
+            }
+          }
+        },
+        {
+          "name": "Identity resolution",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Runs in the warehouse"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "In profile store"
+            },
+            "salesforce": {
+              "mark": "yes",
+              "note": "Now in base edition (Signal #15)"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "In AEP"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Warehouse-native profiles"
+            },
+            "mparticle": {
+              "mark": "yes",
+              "note": "IDSync"
+            }
+          }
+        },
+        {
+          "name": "Event collection SDKs",
+          "cells": {
+            "hightouch": {
+              "mark": "partial",
+              "note": "Events product; younger than incumbents"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "Core strength"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Relies on other tools for collection"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "Web and mobile SDKs"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Core strength"
+            },
+            "mparticle": {
+              "mark": "yes",
+              "note": "Core strength"
+            }
+          }
+        },
+        {
+          "name": "Version control and review for data changes",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Git sync for models and syncs"
+            },
+            "segment": {
+              "mark": "partial",
+              "note": "Partial"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Partial"
+            },
+            "adobe": {
+              "mark": "no",
+              "note": "Limited"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Infrastructure-as-code"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Partial"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "persona": "Product",
+      "capabilities": [
+        {
+          "name": "Real-time in-app audiences",
+          "cells": {
+            "hightouch": {
+              "mark": "partial",
+              "note": "Streaming options; scope latency needs first"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "Real-time profiles"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Depends on setup"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "Edge segmentation"
+            },
+            "rudderstack": {
+              "mark": "partial",
+              "note": "Event-stream based"
+            },
+            "mparticle": {
+              "mark": "yes",
+              "note": "On-device evaluation (Signal #9)"
+            }
+          }
+        },
+        {
+          "name": "Mobile SDK depth",
+          "cells": {
+            "hightouch": {
+              "mark": "partial",
+              "note": "Events SDKs"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "Mature"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Via Marketing Cloud SDK"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "Mature"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Mature"
+            },
+            "mparticle": {
+              "mark": "yes",
+              "note": "Category leader"
+            }
+          }
+        },
+        {
+          "name": "Feeds product analytics tools",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Syncs to analytics destinations"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "Core use case"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Limited"
+            },
+            "adobe": {
+              "mark": "partial",
+              "note": "Mostly Adobe Analytics"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Core use case"
+            },
+            "mparticle": {
+              "mark": "yes",
+              "note": "Core use case"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "persona": "Exec",
+      "capabilities": [
+        {
+          "name": "Works with the existing stack (no rip-and-replace)",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Sits on the warehouse and syncs to current tools"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "Broad catalog"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Best inside Salesforce"
+            },
+            "adobe": {
+              "mark": "partial",
+              "note": "Best inside Adobe"
+            },
+            "rudderstack": {
+              "mark": "yes",
+              "note": "Broad catalog"
+            },
+            "mparticle": {
+              "mark": "yes",
+              "note": "Broad catalog"
+            }
+          }
+        },
+        {
+          "name": "Bundled with a broader suite",
+          "cells": {
+            "hightouch": {
+              "mark": "no",
+              "note": "Standalone"
+            },
+            "segment": {
+              "mark": "yes",
+              "note": "Twilio"
+            },
+            "salesforce": {
+              "mark": "yes",
+              "note": "Salesforce platform"
+            },
+            "adobe": {
+              "mark": "yes",
+              "note": "Adobe Experience Cloud"
+            },
+            "rudderstack": {
+              "mark": "no",
+              "note": "Standalone"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Rokt"
+            }
+          }
+        },
+        {
+          "name": "Fast time to first live audience",
+          "cells": {
+            "hightouch": {
+              "mark": "yes",
+              "note": "Uses models the data team already has"
+            },
+            "segment": {
+              "mark": "partial",
+              "note": "Fast if events are already flowing"
+            },
+            "salesforce": {
+              "mark": "partial",
+              "note": "Depends on data ingestion"
+            },
+            "adobe": {
+              "mark": "partial",
+              "note": "Depends on data ingestion"
+            },
+            "rudderstack": {
+              "mark": "partial",
+              "note": "Fast for data teams; slower for marketers"
+            },
+            "mparticle": {
+              "mark": "partial",
+              "note": "Fast for app data"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "positioning": {
+    "xAxis": {
+      "low": "Packaged",
+      "high": "Composable"
+    },
+    "yAxis": {
+      "low": "Data-team-led",
+      "high": "Marketer-led"
+    },
+    "points": [
+      {
+        "id": "hightouch",
+        "name": "Hightouch",
+        "x": 86,
+        "y": 72,
+        "note": "Composable, with self-serve tools aimed at marketers"
+      },
+      {
+        "id": "segment",
+        "name": "Segment",
+        "x": 42,
+        "y": 44,
+        "note": "Packaged, moving toward the warehouse"
+      },
+      {
+        "id": "salesforce",
+        "name": "Salesforce Data 360",
+        "x": 18,
+        "y": 70,
+        "note": "Suite, bought by marketing and IT"
+      },
+      {
+        "id": "adobe",
+        "name": "Adobe RT-CDP",
+        "x": 12,
+        "y": 60,
+        "note": "Suite, enterprise marketing"
+      },
+      {
+        "id": "rudderstack",
+        "name": "RudderStack",
+        "x": 84,
+        "y": 18,
+        "note": "Composable, built for data engineers"
+      },
+      {
+        "id": "mparticle",
+        "name": "mParticle",
+        "x": 30,
+        "y": 36,
+        "note": "Packaged, product and mobile teams"
+      },
+      {
+        "id": "braze",
+        "name": "Braze",
+        "x": 24,
+        "y": 90,
+        "note": "Engagement platform, marketer-owned"
+      }
+    ]
+  }
+}

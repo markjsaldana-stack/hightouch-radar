@@ -7,7 +7,7 @@ const pillars = [
   {
     icon: Binoculars,
     title: "Track",
-    body: "Features, pricing, positioning, reviews, hiring, and partnerships across every competitor that shows up in deals.",
+    body: "Features, pricing, positioning, reviews, hiring, and partnerships for every competitor that shows up in deals.",
   },
   {
     icon: Gauge,
@@ -24,7 +24,7 @@ const pillars = [
 const whyHightouch = [
   {
     title: "The category is crowded and moving fast.",
-    body: "Composable vs. packaged CDP is still being argued in every deal, and AI decisioning is pulling engagement platforms and suites onto the same turf.",
+    body: "Composable vs. packaged CDP comes up in almost every deal, and AI decisioning now puts engagement platforms and suites in the same evaluations.",
   },
   {
     title: "Each buyer needs different proof.",
@@ -32,7 +32,7 @@ const whyHightouch = [
   },
   {
     title: "Reps need answers in the moment.",
-    body: "They don't need research reports. They need the one line to say when a prospect brings up a competitor's launch on today's call.",
+    body: "When a prospect brings up a competitor's launch on today's call, the rep needs one good line to say back.",
   },
 ];
 

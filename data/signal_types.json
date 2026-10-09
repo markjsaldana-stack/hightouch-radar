@@ -1,6 +1,6 @@
 [
   { "id": "feature", "label": "Feature launch", "description": "A new or expanded capability that overlaps with ours.", "example": "Added a no-code audience builder for marketers." },
-  { "id": "pricing", "label": "Pricing / packaging change", "description": "What's included where, new tiers, bundles, or add-ons. We track the change, not invented numbers.", "example": "Moved identity resolution from an add-on into the base edition." },
+  { "id": "pricing", "label": "Pricing / packaging change", "description": "What's included where, new tiers, bundles, or add-ons. We record what changed and never invent price figures.", "example": "Moved identity resolution from an add-on into the base edition." },
   { "id": "positioning", "label": "Positioning / messaging shift", "description": "New category language, headlines, or comparison content aimed at our buyers.", "example": "Homepage shifted from 'CDP' to 'customer AI' language." },
   { "id": "partnership", "label": "New integration or partnership", "description": "Connectors, co-sell deals, or marketplace listings that change who they can reach.", "example": "Announced a zero-copy connector with a cloud data warehouse." },
   { "id": "ai", "label": "AI capability", "description": "Agents, decisioning, or generative features, especially ones aimed at marketers.", "example": "Goal-based agent setup for lifecycle campaigns." },

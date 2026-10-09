@@ -3,7 +3,7 @@
   "updatedOn": "2026-10-06",
   "updatedBySignals": [
     { "signal": 14, "section": "Objection handling", "change": "Added a response for 'Segment has a no-code audience builder now.'" },
-    { "signal": 13, "section": "Where they win", "change": "Sharpened the 'already installed' play: keep Segment for collection, add Hightouch for activation." },
+    { "signal": 13, "section": "Where they win", "change": "Rewrote the 'already installed' play: keep Segment for collection, add Hightouch for activation." },
     { "signal": 10, "section": "Landmine questions", "change": "Added a question on where AI gets its data, in response to the 'customer AI' messaging shift." }
   ],
   "quickDismiss": "Segment is great at collecting events. Hightouch activates the customer data you already model in your warehouse, so marketers launch on the full picture without a second copy for the data team to keep in sync.",
@@ -15,7 +15,7 @@
       "proof": "Whiteboard the data flow: warehouse → Hightouch → destinations, compared with collect → copy → profile store → destinations."
     },
     {
-      "point": "Marketers self-serve on any data, not just event data",
+      "point": "Marketers self-serve on any warehouse data, including events",
       "detail": "Subscriptions, orders, predictions, and support data are all available in the audience builder the day they land in the warehouse.",
       "proofType": "Demo moment",
       "proof": "Build an audience live using a model the prospect named in discovery, such as LTV, churn score, or subscription tier."
@@ -30,7 +30,7 @@
   "whereTheyWin": [
     {
       "point": "Event collection depth and SDK footprint",
-      "handle": "Don't fight it. Position as 'keep Segment for collection, use Hightouch to activate.' It lowers switching risk and keeps us out of a rip-and-replace."
+      "handle": "Agree with it. Position as 'keep Segment for collection, use Hightouch to activate.' That lowers switching risk and avoids a rip-and-replace."
     },
     {
       "point": "Already installed, so it feels lower risk",
@@ -58,7 +58,7 @@
     },
     {
       "objection": "\"Warehouse-native means my data team becomes the bottleneck.\"",
-      "response": "\"It's the opposite. The data team models the data once, then marketers build audiences themselves. Let me show you an audience built live without SQL.\""
+      "response": "\"The data team models the data once, and marketers build audiences on it themselves from then on. Let me show you an audience built live without SQL.\""
     },
     {
       "objection": "\"Segment's Reverse ETL does the same thing.\"",
@@ -68,8 +68,8 @@
   "byPersona": [
     {
       "persona": "Marketing",
-      "theyCareAbout": "Launching campaigns this week, not next quarter.",
-      "lead": "Self-serve audiences on every data point, not just events. Show a live build.",
+      "theyCareAbout": "Launching campaigns this week.",
+      "lead": "Self-serve audiences on orders, subscriptions, and predictions as well as events. Show a live build.",
       "avoid": "Architecture talk before they've seen the builder.",
       "proofPoint": "Demo moment: audience from a prospect-named model in under five minutes."
     },

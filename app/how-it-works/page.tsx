@@ -68,7 +68,7 @@ export default function Page() {
       <PageHeader
         eyebrow="02 · How it works"
         title="From competitor change to sales-ready intel"
-        lede="Six steps run every week. Most of the collection is automated. The judgment isn't."
+        lede="Six steps run every week. Collection is mostly automated, and I review every change before it reaches a rep."
         sample
       />
 
@@ -131,8 +131,8 @@ export default function Page() {
           <h2 className="font-semibold">Human in the loop</h2>
           <p className="mt-1 max-w-2xl text-pretty">
             AI handles collection and first drafts. I own the judgment, the point of view, and anything a rep will
-            say to a customer. Nothing reaches a talk track until I&apos;ve checked it against the source, and
-            anything rated Rumor never does.
+            say to a customer. I check every talk track against its source, and anything rated Rumor stays out of
+            talk tracks entirely.
           </p>
         </div>
       </aside>
@@ -142,7 +142,7 @@ export default function Page() {
           href="/inputs"
           className="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-accent-fg transition-opacity hover:opacity-90"
         >
-          See the inputs and the real diff <ArrowRight className="size-4" aria-hidden />
+          See the inputs and the diff <ArrowRight className="size-4" aria-hidden />
         </Link>
       </div>
     </>
